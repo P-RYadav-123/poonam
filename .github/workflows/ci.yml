@@ -1,0 +1,15 @@
+name: Poonam Automation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Print welcome message
+      run: echo "GitHub Actions is running successfully for Poonam project!"
